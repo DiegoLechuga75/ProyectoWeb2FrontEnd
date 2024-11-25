@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="admin.js" defer></script>
+    <title>Admin</title>
+</head>
+
+<body class="login-body">
+    <div class="admin-menu">
+        <h1>Administración</h1>
+
+        <!-- Sección de Categorías -->
+        <section class="form-container">
+            <h2>Categorías</h2>
+            <form id="category-form" class="form">
+                <input type="text" id="category-name" name="nombre" placeholder="Nombre de la categoría" required />
+                <button type="submit" id="create-category">Crear Categoría</button>
+            </form>
+            <div class="categories-list">
+                <h3 id="success-category"></h3>
+                <ul id="categories-ul">
+                    <!-- Categorías dinámicas inyectadas aquí -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección de Videojuegos -->
+        <section class="form-container">
+            <h2>Videojuegos</h2>
+            <form id="videogame-form" class="form">
+                <input type="text" id="game-name" name="nombre" placeholder="Nombre del videojuego" required />
+                <input type="number" id="game-price" name="precio" placeholder="Precio" min="0" step="0.01" required />
+                <input type="number" id="game-stock" name="stock" placeholder="Stock" min="0" required />
+                <input type="url" id="game-image" name="img" placeholder="URL de la imagen" required />
+                <input type="url" id="game-trailer" name="trailer" placeholder="URL del trailer" required />
+                <textarea id="game-description" name="description" placeholder="Descripción del juego"
+                    required></textarea>
+                <select id="game-category" name="id_categoria" required>
+                    <option value="">Seleccionar Categoría</option>
+                    <!-- Categorías dinámicas inyectadas aquí -->
+                </select>
+                <select id="game-platform" name="id_plataforma" required>
+                    <option value="1">Xbox</option>
+                    <option value="2">PlayStation</option>
+                    <option value="3">Nintendo</option>
+                </select>
+                <input type="number" id="game-real-price" name="precio_real" placeholder="Precio Real" min="0"
+                    step="0.01" required />
+                <button type="submit" id="create-game">Crear Videojuego</button>
+            </form>
+            <div class="games-list">
+                <h3 id="success-videogame"></h3>
+                <ul id="videogames-ul">
+                    <!-- Videojuegos dinámicos inyectados aquí -->
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

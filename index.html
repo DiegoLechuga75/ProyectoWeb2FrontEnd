@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/10069/10069163.png?semt=ais_hybrid" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://cdn-icons-png.freepik.com/256/10069/10069163.png?semt=ais_hybrid" alt="logo">
+        </div>
+        <form id="search-game">
+            <input type="text" placeholder="Halo Infinite, The Last of Us Part II, Zelda: BOTW">
+            <button>Buscar</button>
+        </form>
+        <ul class="nav-bar">
+            <li class="nav-item brand-nav">
+                <div class="console-icon-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Nintendo_Switch_Logo.svg/2048px-Nintendo_Switch_Logo.svg.png" alt="nintendo-logo">
+                </div>
+            </li>
+            <li class="nav-item brand-nav">
+                <div class="console-icon-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Xbox_Logo.svg" alt="xbox-logo">
+                </div>
+            </li>
+            <li class="nav-item brand-nav">
+                <div class="console-icon-container">
+                    <img src="https://i.pinimg.com/originals/b4/57/9e/b4579ee00cd35613d4cddbfba2e45337.png" alt="playstation-logo">
+                </div>
+            </li>
+            <li class="nav-item" id="profile-button">
+                <div class="console-icon-container">
+                    <img src="https://i.pinimg.com/originals/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.png" alt="profile-logo" >
+                </div>
+            </li>
+            <li id="shopping-cart">
+                <div class="icon-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="shopping-cart">
+                </div>
+                <div id="shopping-menu">
+                    <div class="shopping-items">
+                            
+                    </div>
+                    <div class="shopping-options">
+                        <button id="clear-cart">Vaciar Carrito</button>
+                        <button id="checkout-button">Pagar</button>
+                        <h1 id="total-checkout">$0.0</h1>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="displayed-container">
+            <div class="displayed-game">
+                <div class="info-displayed">
+                    <h1>Halo Infinite</h1>
+                    <p>Un épico juego de disparos en primera persona que redefine el combate en el universo de Halo con su impresionante campaña y multijugador masivo.</p>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/PyMlV5_HRWk?si=LKDE_g3tNxO_vjV5&autoplay=1&mute=1"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="cards-container">
+            
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="createOrder.js" defer></script>
+    <title>Orders</title>
+</head>
+
+<body class="login-body">
+    <div class="form-container">
+        <h2>Crear Orden</h2>
+        <div class="ordered-games-container">
+            
+        </div>
+        <h1>Total:</h1>
+        <h2 id="total-price">$</h2>
+        <form id="create-order-form">
+            <label for="forma-de-pago">Forma de Pago:</label>
+            <select id="forma-de-pago" name="forma_de_pago" required>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="transferencia">Transferencia</option>
+            </select>
+            <button id="create-order-btn">Crear Orden</button>
+        </form>
+        <h1 id="success-title"></h1>
+    </div>
+
+</body>
+
+</html>
